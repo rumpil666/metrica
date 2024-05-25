@@ -1,0 +1,30 @@
+.chart {
+  background-color: var(--opisanie---dannye-2);
+  box-shadow: 0 0 1px 0 rgba(61, 57, 54, 0.04), 0 2px 6px 0 rgba(61, 57, 54, 0.04), 0 10px 20px 0 rgba(61, 57, 54, 0.04);
+  max-width: 591px;
+  height: 534px;
+  width: 100%;
+  border-radius: 7px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 19px 49px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: var(--opisanie---dannye);
+  }
+
+  &__dropDown {
+    background-color: var(--opisanie---dannye-2);
+    border: none;
+    width: 26px;
+    height: 26px;
+    padding-bottom: 5px;
+  }
+}

@@ -1,0 +1,41 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--opisanie---dannye-2);
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+
+  &__container {
+    padding: 0;
+    margin-top: 246px;
+    margin-bottom: 184px;
+    align-self: center;
+  }
+
+  &__title {
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 169px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  &__link {
+    color: var(--bad);
+  }
+
+  &__btn {
+    background-color: var(--opisanie---dannye-2);
+    align-self: center;
+  }
+}

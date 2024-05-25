@@ -1,0 +1,116 @@
+.column {
+  max-width: 80px;
+  width: 100%;
+
+  &__block {
+    position: relative;
+    left: 0;
+    background-color: var(--metrika-2);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: var(--opisanie---dannye-2);
+
+    &:empty {
+      display: none;
+    }
+
+    &:first-child {
+      background-color: var(--metrika-1);
+      z-index: 3;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &:last-child {
+      background-color: var(--metrika-3);
+      z-index: 1;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  &__blockHeader {
+    position: relative;
+    height: 9px;
+    background-color: var(--opisanie---dannye-2);
+
+    &_empty {
+      display: none;
+    }
+
+    &_Center {
+      &::after {
+        content: url(../../images/Arrow.svg);
+        position: relative;
+        top: -11px;
+        left: 47%;
+      }
+    }
+
+    &_Start {
+      &::after {
+        content: url(../../images/Arrow.svg);
+        position: relative;
+        top: -11px;
+        left: 35%;
+      }
+    }
+
+    &_arrow_last {
+      &::after {
+        content: url(../../images/Arrow.svg);
+        position: relative;
+        top: -11px;
+        left: 35%;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: var(--opisanie---dannye);
+  }
+
+  &__norm {
+    border-radius: 10px;
+    max-width: 80px;
+    width: 100%;
+    background: linear-gradient(-45deg,
+        rgba(0, 0, 0, 0) 49.9%,
+        var(--opisanie---dannye-2) 49.9%, var(--opisanie---dannye-2) 60%,
+        rgba(0, 0, 0, 0) 60%),
+      linear-gradient(-45deg,
+        var(--opisanie---dannye-2) 10%,
+        rgba(0, 0, 0, 0) 10%);
+    background-size: 1.5em 1.5em;
+    background-color: var(--metrika-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    width: 48px;
+    height: 24px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--opisanie---dannye);
+    background-color: var(--opisanie---dannye-2);
+
+    &:empty {
+      display: none;
+    }
+  }
+
+
+}

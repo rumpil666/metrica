@@ -1,0 +1,66 @@
+.diagram {
+  max-width: 500px;
+  width: 100%;
+  height: 431px;
+  padding: 0 44px 0 47px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    margin-left: 86px;
+    max-width: 199px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+    min-height: 300px;
+  }
+
+  &__footer {
+    margin-top: 40px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--opisanie---dannye);
+    margin-left: 9px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+  }
+
+  &__color1 {
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    background: var(--metrika-1);
+  }
+
+  &__color2 {
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    background: var(--metrika-2);
+  }
+
+  &__color3 {
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    background: var(--metrika-3);
+  }
+}

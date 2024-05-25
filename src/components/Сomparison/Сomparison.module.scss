@@ -1,0 +1,68 @@
+.comparison {
+  position: relative;
+
+  &__borderArrow {
+    border-top: 1px solid var(--opisanie---dannye);
+    border-left: 1px solid var(--opisanie---dannye);
+    border-right: 1px solid var(--opisanie---dannye);
+    width: 130px;
+    height: 310px;
+    z-index: 0;
+    margin-left: 40px;
+    position: absolute;
+    top: 12px;
+    display: flex;
+    justify-content: center;
+
+    &_left {
+      @extend .comparison__borderArrow;
+      left: -85.4px;
+    }
+
+    &_right {
+      @extend .comparison__borderArrow;
+      right: -36px;
+    }
+  }
+
+  &__difference {
+    border-radius: 50px;
+    min-width: 40px;
+    padding: 0 4px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: var(--opisanie---dannye-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12px;
+    z-index: 2;
+
+    &_bad {
+      @extend .comparison__difference;
+      background-color: var(--bad);
+
+      &::before {
+        content: url(../../images/ArrowDown.svg);
+        margin-right: 2px;
+      }
+    }
+
+    &_good {
+      @extend .comparison__difference;
+      background-color: var(--good);
+
+      &::before {
+        content: url(../../images/ArrowUp.svg);
+        margin-right: 2px;
+      }
+    }
+
+    &_null {
+      @extend .comparison__difference;
+      background-color: var(--opisanie---dannye);
+    }
+  }
+}
