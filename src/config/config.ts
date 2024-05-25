@@ -1,5 +1,5 @@
 class URL {
-	private root = '/'
+	private root = '/metrica'
 
 	HOME = this.root
 }
